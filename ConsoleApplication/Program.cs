@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Collections;
+using ConsoleApplication;
 
 static int addi(int x,int y){
     return x+y;
@@ -25,6 +26,14 @@ static void val(int  x)
 int v = Convert.ToInt32(Console.ReadLine());
 
 val(v);
+//Arrays
+
+
+
+
+
+
+//ArrayLists
 
 Console.WriteLine("Arraylist");
 ArrayList arr = new ArrayList();
@@ -55,3 +64,14 @@ for (int i = 0; i < arr.Count; i++)
 }
 Console.WriteLine();
 
+//constructor
+
+var c1 = new person("mohan",21);
+Console.WriteLine(c1.name);
+Console.WriteLine(c1.age);
+
+var c2 = new person();
+c2.name = "Chandermohan";
+c2.age = 21;
+Console.WriteLine(c2.name);
+Console.WriteLine(c2.age);
