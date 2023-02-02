@@ -75,3 +75,37 @@ c2.name = "Chandermohan";
 c2.age = 21;
 Console.WriteLine(c2.name);
 Console.WriteLine(c2.age);
+
+// type conversion
+
+// Implicit Conversion(done by the compiler itself)
+// smaller type to larger type
+// char>int>long>float>double
+
+char ch = 'a';
+char ch1 ='A';
+int _ch = ch;
+int _ch1 = ch1;
+Console.WriteLine(_ch);
+Console.WriteLine(_ch1);
+
+// this code will give error
+// double d = 97D;
+// char _d = d;
+// Console.WriteLine(_d);
+
+// Explicit Conversion(manually)
+// larger type to smaller type
+// double>float>long>int>char
+
+// explicit casting
+double d = 97D;
+char _d = (char)d;
+Console.WriteLine(_d);
+
+
+int myint = 97;
+string _myint = Convert.ToString(myint);
+Console.WriteLine(_myint);
+Console.WriteLine(_myint+"hlo");
+
