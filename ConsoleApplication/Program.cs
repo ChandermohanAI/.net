@@ -70,11 +70,11 @@ var c1 = new person("mohan",21);
 Console.WriteLine(c1.name);
 Console.WriteLine(c1.age);
 
-var c2 = new person();
-c2.name = "Chandermohan";
-c2.age = 21;
-Console.WriteLine(c2.name);
-Console.WriteLine(c2.age);
+// var c2 = new person();
+// c2.name = "Chandermohan";
+// c2.age = 21;
+// Console.WriteLine(c2.name);
+// Console.WriteLine(c2.age);
 
 // type conversion
 
@@ -99,13 +99,46 @@ Console.WriteLine(_ch1);
 // double>float>long>int>char
 
 // explicit casting
-double d = 97D;
-char _d = (char)d;
-Console.WriteLine(_d);
+// double d = 97D;
+// char _d = (char)d;
+// Console.WriteLine(_d);
 
 
-int myint = 97;
-string _myint = Convert.ToString(myint);
-Console.WriteLine(_myint);
-Console.WriteLine(_myint+"hlo");
+// int myint = 97;
+// string _myint = Convert.ToString(myint);
+// Console.WriteLine(_myint);
+// Console.WriteLine(_myint+"hlo");
 
+// Nullable types
+//ValueType - int,float,,double,structs,enums
+//In valueType we can not assign null vaue
+
+// int _val = null; this will give error
+int? _val = null;
+Console.WriteLine(_val);
+
+
+//reference Type - string,object,class,arrays
+//In reference type we can assign value as null
+
+string _val1 = null; // with reference type we can assign null value
+
+bool? _val2 = null;
+
+if(_val2 == true){
+    Console.WriteLine("Value is True");
+}
+else if(_val2 == false){
+    Console.WriteLine("Value is True");
+}
+else{ 
+    Console.WriteLine("Value is Null");
+}
+
+//Inheritance
+
+
+student obj = new student("hlo",32,12,2023,"pass");
+
+
+Console.WriteLine(obj.year);
