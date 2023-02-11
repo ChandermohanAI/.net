@@ -22,7 +22,7 @@ namespace ConsoleApplication
             
         }
 
-        public override void disp(){
+        public override void disp(){// override is used for polymorphismm
             Console.WriteLine("Derived Class\nName: {0}\nAge: {1}\nMarks: {2}\nYear: {3}\nresult: {4}",name,age,marks,year,result);
         }
 

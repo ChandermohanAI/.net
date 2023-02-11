@@ -19,7 +19,7 @@ namespace ConsoleApplication
             this.result = result;
         }
 
-        public virtual void disp(){
+        public virtual void disp(){//virtual is used for polymorphism
             Console.WriteLine("Base Class\nYear: {0}\nResult: {1}",year,result);
         }
 
