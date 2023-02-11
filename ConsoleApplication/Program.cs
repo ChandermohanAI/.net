@@ -142,3 +142,44 @@ student obj = new student("hlo",32,12,2023,"pass");
 
 
 Console.WriteLine(obj.year);
+
+obj.disp();
+
+
+// recursion
+
+static int recurr(int x){
+    if(x ==0){
+        return 0;
+    }
+    else if(x==1){
+        return 1;
+    }
+    else{
+        return (recurr(x-1) + recurr(x-2));
+    }
+    }
+
+Console.WriteLine(recurr(6));
+
+
+static int fact(int x){
+    if(x==1){
+        return 1;
+    }
+    else{
+        return x*fact(x-1);
+    }
+}
+Console.WriteLine(fact(6));
+
+static int sumOfDigit(int x){
+    if(x==0){
+        return 0;
+    }
+    else{
+        return ((x%10) +sumOfDigit(x/10));
+    }
+}
+
+Console.WriteLine(sumOfDigit(1234));

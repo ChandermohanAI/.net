@@ -18,8 +18,8 @@ namespace ConsoleApplication
             
         }
 
-        public void disp(){
-            Console.WriteLine(name);
+        public override void disp(){
+            Console.WriteLine("Derived Class\nName: {0}\nAge: {1}\nMarks: {2}\nYear: {3}\nresult: {4}",name,age,marks,year,result);
         }
         
     }
