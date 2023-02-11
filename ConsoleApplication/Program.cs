@@ -137,14 +137,29 @@ else{
 
 //Inheritance
 
+// Inheritance in Constructor
 
-student obj = new student("hlo",32,12,2023,"pass");
+student ob = new student();
 
-
+student obj = new student("mohan",32,12,2023,"pass");
 Console.WriteLine(obj.year);
-
 obj.disp();
 
+//Method Hiding using "new" Keyword
+
+// both student and graduate class have same method print but it will invoke the derived class metod on calling this is called method hiding 
+student pr = new student();
+pr.print();
+
+// for the base class print method following methods are used
+// Method 1 - Explicitly typecasting
+
+((graduate)pr).print();
+
+//Method -2 
+
+graduate pr2 = new student();
+pr2.print();
 
 // recursion
 
