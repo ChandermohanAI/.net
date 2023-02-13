@@ -26,7 +26,7 @@ static void val(int  x)
 int v = Convert.ToInt32(Console.ReadLine());
 
 val(v);
-//Arrays
+//Array
 
 
 
